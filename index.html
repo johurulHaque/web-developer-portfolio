@@ -22,40 +22,61 @@
         }
 
         .primary-color {
-            color: #FD6E0A;            
+            color: #FD6E0A;
         }
 
         .primary-btn {
             background-color: #FD6E0A;
             border-radius: 5px;
             border: none;
-            color: rgb(255, 255, 255);            
+            color: rgb(255, 255, 255);
             font-size: 20px;
             font-weight: 700;
             line-height: 27px;
             letter-spacing: 0%;
             text-align: left;
-            padding: 15px 35px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
 
+        .primary-outline-btn {
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            border: 1px solid #FD6E0A;
+            color: #FD6E0A;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 27px;
+            letter-spacing: 0%;
+            text-align: left;
+            padding: 10px 20px;
+        }
+
+        /* header style  */
+        .header {
+            background-color: #FFF8F3;
+            background-image: url('./images/developer.png');
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            background-size: contain;
         }
 
         /* nav menu style */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 150px;
+        }
 
         .nav-title {
             font-size: 45px;
             font-weight: 800;
             text-align: left;
-            /* background-color: red; */
-        }
-
-        nav {
-            display: flex;            
-            justify-content: space-between;
-            margin: 0px 200px;
         }
 
         nav>ul {
-            display: flex;            
+            display: flex;
             gap: 50px;
         }
 
@@ -65,20 +86,53 @@
         }
 
         nav a {
-            text-decoration: none;            
+            text-decoration: none;
             font-weight: 400;
             font-size: 20px;
             color: #474747;
         }
-        header {
-            background-color: #FFF8F3;
-            padding-top: 20px;
+
+        /*  banner style  */
+        .banner {
+            display: flex;
+            align-items: center;            
+            padding: 50px 20px 0px 150px;
+            background-image: url('./images/header_bg.png');
+            background-repeat: no-repeat;
+            background-size: 650px auto;
+            background-position: bottom right;
+        }
+
+        .banner .banner-greeting {
+            font-size: 45px;
+            font-weight: 600;
+            line-height: 61px;
+        }
+
+        .banner .banner-title {
+            font-size: 85px;
+            font-weight: 700;
+            line-height: 116px;
+        }
+
+        .banner .banner-image {
+            width: 480px;
+
+        }
+
+        .banner .banner-para {
+            color: rgb(117, 117, 117);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
         }
     </style>
 </head>
 
 <body>
-    <header>
+    <!-- header -->
+    <!-- header -->
+    <header class="header">
         <nav>
             <h3 class="nav-title">Ma<span class="primary-color">r</span>y</h3>
             <ul>
@@ -87,6 +141,18 @@
                 <li><button class="primary-btn">Hire me</button></li>
             </ul>
         </nav>
+        <div class="banner">
+            <div>
+                <h3 class="banner-greeting">Hi, I am</h3>
+                <h2 class="banner-title">Mary Hardy</h2>
+                <p class="banner-para">Shot what able cold new see hold.Friendly as an betrayed formerly he. Morning
+                    because as to society
+                    behaved moments.</p>
+                <button class="primary-btn">Download CV</button>
+                <button class="primary-outline-btn">Contact</button>
+            </div>
+            <img class="banner-image" src="./images/hardy.png" alt="">
+        </div>
     </header>
     <main>
 
