@@ -150,8 +150,8 @@
         }
 
         /* 
-            main section style 
-            main section style 
+            Main section style 
+            Main section style             
         */
         main {
             max-width: 1050px;
@@ -159,10 +159,13 @@
 
         }
 
-        /* about style */
+        main>section {
+            margin: 100px 0;
+        }
+
+        /* About section style */
         .about {
             background-color: #FFF8F3;
-            margin: 100px 0px;
             padding: 130px;
         }
 
@@ -177,7 +180,7 @@
             margin-top: 10px;
         }
 
-        /* what-i-do */
+        /* What-i-do */
         #what-i-do-description {
             padding: 20px 80px;
         }
@@ -202,27 +205,30 @@
             line-height: 30px;
         }
 
-        /* resume */
-        .resume {
-            margin: 100px 0;            
-        }
+        /* Resume section style */
 
         .resume-container {
             display: flex;
             gap: 20px;
+            margin-top: 30px;
         }
 
-        .resume-title {
+        .resume-container hr {
+            margin-right:  90px;
+            margin-bottom: 20px;
+        }
+
+        .resume-column-title {
             margin-bottom: 10px;
-            color: rgb(71, 71, 71);            
-            font-size: 22px;
+            color: rgb(71, 71, 71);
+            font-size: 24px;
             font-weight: 700;
             line-height: 41px;
             letter-spacing: 0%;
             text-align: left;
         }
 
-        .resume-sub-title {
+        .resume-item-title {
             color: rgb(71, 71, 71);
             font-size: 18px;
             font-weight: 700;
@@ -230,15 +236,18 @@
             letter-spacing: 0%;
             text-align: left;
         }
+        
 
-        .resume-desctiption {
+        .resume-item-institute, .resume-item-description {
             color: rgb(117, 117, 117);
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 30px;
-            /* text-align: center; */
+            font-size: 16px;            
             padding-right: 50px;
-            margin: 5px 0px 15px 0px;
+            margin: 2px 0px 15px 0px;
+        }
+
+        .btn-middle {
+            display: block;
+            margin: 15px auto;
         }
     </style>
 </head>
@@ -302,7 +311,7 @@
                 </div>
             </div>
         </section>
-        <!-- what i do section -->
+        <!-- what i do section  -->
         <section>
             <h2 class="section-title">
                 What I do
@@ -340,65 +349,65 @@
             </div>
 
         </section>
-        <!-- resume -->
+        <!-- resume section  -->
         <section class="resume">
             <h2 class="section-title">A summary of My Resume</h2>
             <div class="resume-container">
-                <div class="education">
-                    <h3 class="resume-title">My Education</h3>
-                    <div>
-                        <h4 class="resume-sub-title">Master in Computer Engineering</h4>
-                        <h5>Harvard University / 2015 - 2017</h5>
-                        <p class="resume-desctiption">List skill/technologies here. You can change the icon above
+                <div class="resume-column">
+                    <h3 class="resume-column-title">My Education</h3>
+                    <div class="resume-item">
+                        <h2 class="resume-item-title">Master in Computer Engineering</h2>
+                        <h3 class="resume-item-institute">Harvard University / 2015 - 2017</h3>
+                        <p class="resume-item-description">List skill/technologies here. You can change the icon above
                             to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
                         </p>
                     </div>
                     <hr>
                     <div>
-                        <h4 class="resume-sub-title">Master in Computer Engineering</h4>
-                        <h5>Harvard University / 2015 - 2017</h5>
-                        <p class="resume-desctiption">List skill/technologies here. You can change the icon above
+                        <h2 class="resume-item-title">Master in Computer Engineering</h2>
+                        <h3 class="resume-item-institute">Harvard University / 2015 - 2017</h3>
+                        <p class="resume-item-description">List skill/technologies here. You can change the icon above
                             to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
                         </p>
                     </div>
                     <hr>
                     <div>
-                        <h4 class="resume-sub-title">Master in Computer Engineering</h4>
-                        <h5>Harvard University / 2015 - 2017</h5>
-                        <p class="resume-desctiption">List skill/technologies here. You can change the icon above
+                        <h4 class="resume-item-title">Master in Computer Engineering</h4>
+                        <h5 class="resume-item-institute">Harvard University / 2015 - 2017</h5>
+                        <p class="resume-item-description">List skill/technologies here. You can change the icon above
                             to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
                         </p>
                     </div>
                 </div>
-                <div class="experience">
-                    <h3 class="resume-title">My Experience</h3>
+                <div class="resume-column">
+                    <h3 class="resume-column-title">My Experience</h3>
                     <div>
-                        <h4 class="resume-sub-title">Sr. Font End Developer</h4>
-                        <h5>Apple Inc / 2020 - Current</h5>
-                        <p class="resume-desctiption">List skill/technologies here. You can change the icon above
+                        <h2 class="resume-item-title">Sr. Font End Developer</h2>
+                        <h3 class="resume-item-institute">Apple Inc / 2020 - Current</h3>
+                        <p class="resume-item-description">List skill/technologies here. You can change the icon above
                             to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
                         </p>
                     </div>
                     <hr>
                     <div>
-                        <h4 class="resume-sub-title">Jr. Font End Developer</h4>
-                        <h5>Dribbble Inc / 2018 - 2022</h5>
-                        <p class="resume-desctiption">List skill/technologies here. You can change the icon above
+                        <h2 class="resume-item-title">Jr. Font End Developer</h2>
+                        <h3 class="resume-item-institute">Dribbble Inc / 2018 - 2022</h3>
+                        <p class="resume-item-description">List skill/technologies here. You can change the icon above
                             to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
                         </p>
                     </div>
                     <hr>
                     <div>
-                        <h4 class="resume-sub-title">HTML Developer</h4>
-                        <h5>Adobe Inc / 2017 - 2018</h5>
-                        <p class="resume-desctiption">List skill/technologies here. You can change the icon above
+                        <h2 class="resume-item-title">HTML Developer</h2>
+                        <h3 class="resume-item-institute">Adobe Inc / 2017 - 2018</h3>
+                        <p class="resume-item-description">List skill/technologies here. You can change the icon above
                             to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
                         </p>
                     </div>
 
                 </div>
             </div>
-
+            <button class="primary-btn btn-middle">Download Cv</button>
         </section>
     </main>
     <footer>
